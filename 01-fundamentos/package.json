@@ -1,6 +1,15 @@
 {
   "name": "01-fundamentos",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
