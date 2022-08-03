@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2022-08-02T22:55:42.836Z
+__export_date: 2022-08-03T20:13:33.091Z
 __export_source: insomnia.desktop.app:v2022.4.2
 resources:
   - _id: req_d229b53acf564c87be104682b9bc8f88
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659480816872
+    modified: 1659557528655
     created: 1657317437168
     url: "{{ _.baseURL }}/account"
     name: Create
@@ -68,7 +68,7 @@ resources:
     _type: request
   - _id: req_6e91c4ff3240445e93f23206cd7fa8b9
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659480863419
+    modified: 1659557534427
     created: 1659480750657
     url: "{{ _.baseURL }}/deposit"
     name: Deposit
@@ -92,6 +92,39 @@ resources:
         id: pair_f8cdfbc60f5749268eafe466253cc717
     authentication: {}
     metaSortKey: -1659386942526
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c9ce77b03c8544afb3aa59d84a61e4a0
+    parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
+    modified: 1659557553724
+    created: 1659557068666
+    url: "{{ _.baseURL }}/withdraw"
+    name: Withdraw
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"amount": 200
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e2ce2a38bc734b45967cc88462daa5f1
+      - id: pair_bd7588a5bdba4ce3909b73b19c66b065
+        name: cpf
+        value: 111.222.333-44
+        description: ""
+    authentication: {}
+    metaSortKey: -1659386942476
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
