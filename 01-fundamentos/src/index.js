@@ -121,4 +121,13 @@ app.put("/account", (request, response) => {
     return response.json(customer)
 })
 
+app.delete("/account", (request, response) => {
+    const { customer } = request
+
+    customers.splice(customer, 1)
+
+    return response.sendStatus(204)
+})
+
+
 app.listen(3333)
