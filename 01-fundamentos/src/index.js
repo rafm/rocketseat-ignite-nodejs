@@ -110,4 +110,6 @@ app.get("/statement/date", (request, response) => {
     return response.json(statement)
 })
 
+app.get("/account", (request, response) => response.json(request.customer))
+
 app.listen(3333)

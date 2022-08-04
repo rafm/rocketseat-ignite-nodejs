@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2022-08-04T20:08:44.423Z
+__export_date: 2022-08-04T20:21:38.795Z
 __export_source: insomnia.desktop.app:v2022.4.2
 resources:
   - _id: req_d229b53acf564c87be104682b9bc8f88
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659643672032
+    modified: 1659644473032
     created: 1657317437168
     url: "{{ _.baseURL }}/account"
     name: Create
@@ -43,7 +43,7 @@ resources:
     _type: workspace
   - _id: req_d67f1c39fd66473a9a0f5ddda4b3a9b1
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659480777367
+    modified: 1659644465697
     created: 1659386942576
     url: "{{ _.baseURL }}/statement"
     name: Statement
@@ -68,7 +68,7 @@ resources:
     _type: request
   - _id: req_6e91c4ff3240445e93f23206cd7fa8b9
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659643676981
+    modified: 1659643833488
     created: 1659480750657
     url: "{{ _.baseURL }}/deposit"
     name: Deposit
@@ -102,7 +102,7 @@ resources:
     _type: request
   - _id: req_c9ce77b03c8544afb3aa59d84a61e4a0
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659643685014
+    modified: 1659643837112
     created: 1659557068666
     url: "{{ _.baseURL }}/withdraw"
     name: Withdraw
@@ -154,6 +154,31 @@ resources:
         description: ""
     authentication: {}
     metaSortKey: -1659386942426
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6dd62c1a4d654491a24790a66f1afb0b
+    parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
+    modified: 1659644476525
+    created: 1659644435217
+    url: "{{ _.baseURL }}/account"
+    name: Account
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_567209da6b494d238c5951f716a97e6b
+        name: cpf
+        value: 111.222.333-44
+        description: ""
+    authentication: {}
+    metaSortKey: -1659386942376
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
