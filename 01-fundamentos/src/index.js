@@ -112,4 +112,13 @@ app.get("/statement/date", (request, response) => {
 
 app.get("/account", (request, response) => response.json(request.customer))
 
+app.put("/account", (request, response) => {
+    const { customer } = request
+    const { name } = request.body
+
+    customer.name = name
+
+    return response.json(customer)
+})
+
 app.listen(3333)

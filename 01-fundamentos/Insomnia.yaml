@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2022-08-04T20:21:38.795Z
+__export_date: 2022-08-04T20:25:36.541Z
 __export_source: insomnia.desktop.app:v2022.4.2
 resources:
   - _id: req_d229b53acf564c87be104682b9bc8f88
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659644473032
+    modified: 1659644708508
     created: 1657317437168
     url: "{{ _.baseURL }}/account"
     name: Create
@@ -179,6 +179,39 @@ resources:
         description: ""
     authentication: {}
     metaSortKey: -1659386942376
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b3729bf138704888a3d000fb6c08da99
+    parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
+    modified: 1659644721178
+    created: 1659644652716
+    url: "{{ _.baseURL }}/account"
+    name: Update Account
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Rafa"
+        }
+    parameters: []
+    headers:
+      - id: pair_0aa0545b37dd4bf797051bfb51433049
+        name: cpf
+        value: 111.222.333-44
+        description: ""
+      - name: Content-Type
+        value: application/json
+        id: pair_390a1d4a7c7a44c7aca8055a80f78729
+    authentication: {}
+    metaSortKey: -1659386942326
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
