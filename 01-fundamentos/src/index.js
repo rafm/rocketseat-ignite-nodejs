@@ -99,4 +99,15 @@ app.post("/withdraw", (request, response) => {
     return response.status(201).json(statementOperation)
 })
 
+app.get("/statement/date", (request, response) => {
+    const { customer } = request
+    const { date } = request.query
+
+    const dateFormat = new Date(date + " 00:00").toDateString()
+
+    const statement = customer.statement.filter(operation => operation.created_at.toDateString() === dateFormat)
+
+    return response.json(statement)
+})
+
 app.listen(3333)

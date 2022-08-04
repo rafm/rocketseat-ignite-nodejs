@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2022-08-03T20:13:33.091Z
+__export_date: 2022-08-04T20:08:44.423Z
 __export_source: insomnia.desktop.app:v2022.4.2
 resources:
   - _id: req_d229b53acf564c87be104682b9bc8f88
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659557528655
+    modified: 1659643672032
     created: 1657317437168
     url: "{{ _.baseURL }}/account"
     name: Create
@@ -68,7 +68,7 @@ resources:
     _type: request
   - _id: req_6e91c4ff3240445e93f23206cd7fa8b9
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659557534427
+    modified: 1659643676981
     created: 1659480750657
     url: "{{ _.baseURL }}/deposit"
     name: Deposit
@@ -102,7 +102,7 @@ resources:
     _type: request
   - _id: req_c9ce77b03c8544afb3aa59d84a61e4a0
     parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
-    modified: 1659557553724
+    modified: 1659643685014
     created: 1659557068666
     url: "{{ _.baseURL }}/withdraw"
     name: Withdraw
@@ -125,6 +125,35 @@ resources:
         description: ""
     authentication: {}
     metaSortKey: -1659386942476
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_635d4a15436445a99a2aace00a50e2ef
+    parentId: wrk_41cc3fd55a9b4ab89470c7dd26860d78
+    modified: 1659643682570
+    created: 1659643507509
+    url: "{{ _.baseURL }}/statement/date"
+    name: Statement By Date
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_e500cc4513c641f2a3cdb410608797cb
+        name: date
+        value: 2022-08-04
+        description: ""
+    headers:
+      - id: pair_dceaf095298d49c18e6e8b60e4b2e973
+        name: cpf
+        value: 111.222.333-44
+        description: ""
+    authentication: {}
+    metaSortKey: -1659386942426
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
